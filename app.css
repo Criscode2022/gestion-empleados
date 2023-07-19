@@ -1,0 +1,211 @@
+header {
+
+    background: linear-gradient(to right, #016cc4, #FFA17F);
+    text-align: center;
+    padding: 30pt;
+    border-bottom: 1px solid black;
+
+}
+
+h2 {
+
+  text-shadow: 0.75px 0.75px 1.5px #000000 !important;
+
+
+}
+
+#centrar1 {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+#centrar2 {
+display: block !important;
+  margin: auto !important;
+  width: 100% !important;
+}
+
+header h2 {
+
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    margin-top: 20pt !important;
+    visibility: hidden;
+
+}
+
+label {
+
+  font-weight: bold !important;
+}
+
+i {
+
+  float: right;
+  margin: 10pt;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  font-size: 2em;
+
+}
+
+
+
+body {
+
+    background-color: rgb(255, 255, 213);
+}
+
+.table-responsive {
+ 
+  overflow-x: auto;
+}
+
+
+form {
+  margin-top: 20pt !important;
+  margin: auto;
+  width: 80%;
+  border: solid black 1px;
+  padding: 10pt;
+  border-radius: 5pt;
+  background-color: bisque;
+  box-shadow: 10px 3px 3px black;
+}
+
+
+
+@media (min-width: 768px) {
+  form {
+      width: 50%;
+  }
+
+  .empleados {
+
+    padding-right:110pt !important;
+    margin-top: 45pt !important;
+  }
+  
+  h2 {
+
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-left: 90pt;
+  }
+
+  .table-responsive {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+  @media (max-width: 767px) {
+  
+  header h2 {
+
+    visibility: hidden !important;
+
+}
+
+.empleados {
+
+  text-align: center !important;
+}
+
+
+
+h2 {
+
+  position: relative !important;
+  right: 20px !important; 
+}
+
+table {
+
+  margin-right: 20pt !important;
+  padding-right: 20pt !important;
+}
+
+  
+  }
+  
+
+
+
+
+
+  table {
+    border-collapse: collapse;
+    margin: 40pt;
+    border-radius: 5pt;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  table * {
+    padding: 10pt;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  #close {
+margin-top: 20pt;
+margin-bottom: 40pt;
+margin-right: 20pt;
+    display: flex;
+justify-content: end; 
+ }
+  
+  h2 {
+
+    margin-top: 30pt;
+    margin-left: 30pt;
+  }
+
+  img {
+
+   position: absolute;
+   top: -45pt;
+   right: 0;
+   width: 300pt;
+   margin-bottom: 20pt !important;
+   padding-bottom: 20pt !important;
+  }
+
+  @media (max-width: 450px) {
+
+    form {
+
+      width: 90% !important;
+    
+    }
+
+    
+  }
+
+  
+  @media (min-width: 1001px) {
+
+    form {
+
+      width: 35% !important;
+      padding: 30pt !important;
+    
+    }
+
+    
+  }
+
+  #botones {
+
+    display: flex;
+    justify-content: center;
+    gap: 10pt;
+  }
