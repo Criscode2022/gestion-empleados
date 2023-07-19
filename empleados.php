@@ -1,10 +1,12 @@
 <?php
 session_start();
 
-$servername = "pdb1035.awardspace.net";
-$username = "4304083_autenticar";
-$password = "practicas2023";
-$dbname = "4304083_autenticar";
+//Por motivos de seguridad, la información de la base de datos no está incluída en este código fuente subido a GitHub
+
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
