@@ -1,6 +1,6 @@
 # Gestión de Empleados
 
-## Introducción
+## Descripción
 
 Aplicación Full Stack realizada con HTML, CSS (con Bootstrap 5) y JavaScript en el lado del cliente (Front-End) y PHP y MySQL en el lado del servidor (Back-End). Esta aplicación permite hacer un CRUD completo de empleados en una base de datos con sistema de registro y autenticación que crea sesiones en el navegador y que asigna cada empleado con su usuario a través de un ID de usuario. 
 
