@@ -1,0 +1,66 @@
+header {
+  background: linear-gradient(to right, #016cc4, #ffa17f);
+  padding: 50pt;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px black;
+}
+
+i {
+  float: right;
+  margin: 10pt;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  font-size: 2em;
+}
+
+body {
+  background-color: rgb(255, 255, 213);
+  font-family: "Rubik", sans-serif;
+}
+
+label {
+  font-weight: bold;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+form {
+  background-color: bisque;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 40pt;
+  border-radius: 5pt;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+table * {
+  padding: 10pt;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+img {
+  position: absolute;
+  top: -45pt;
+  right: 0;
+  width: 300pt;
+  margin-bottom: 20pt !important;
+  padding-bottom: 20pt !important;
+}
+
+@media (max-width: 768px) {
+  .overflow {
+    overflow-x: scroll;
+  }
+}
