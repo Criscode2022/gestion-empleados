@@ -10,7 +10,7 @@ ini_set('display_errors', '1');
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -31,7 +31,12 @@ ini_set('display_errors', '1');
 <body>
 
 
-  <header class="border-bottom"><img src="logo.png" alt="Logo de la aplicación en el que se lee 'Gestión Empleados'"></header>
+  <header class="border-bottom">
+
+    <img src="/gestion/src/assets/logo.png" alt="Logo de la aplicación en el que se lee 'Gestión Empleados'">
+
+
+  </header>
 
   <div class="container">
     <?php if (isset($_SESSION['success_message'])) : ?>
@@ -48,54 +53,60 @@ ini_set('display_errors', '1');
       </div>
       <?php unset($_SESSION['success_message']); ?>
     <?php endif; ?>
+  </div>
 
 
-    <div class="container">
+  <div class="container">
 
-      <div class="row">
-        <div class="col p-4">
-          <h1 class="text-center">Registrarse</h1>
-        </div>
+    <div class="row p-4">
+      <div class="col">
+        <h1 class="text-center">Registrarse</h1>
       </div>
-
-      <div class="row">
-        <div class="col-md-5 m-auto">
-          <form class="border border-dark-subtle p-4 rounded shadow" action="register.php" method="post">
-
-            <div class="mb-3">
-              <label for="username" class="form-label">Usuario</label>
-              <input type="text" minlength="5" maxlength="20" class="form-control" id="username" name="username" placeholder="Usuario" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="password" class="form-label">Contraseña</label>
-              <input type="password" minlength="5" maxlength="20" class="form-control" name="password" id="password" placeholder="Contraseña" required>
-              <i class="bi bi-eye-slash" id="togglePassword"></i>
-            </div>
-
-            <?php
-            if (isset($_SESSION['error_message'])) {
-              echo "<h5 class='text-danger'>" . $_SESSION['error_message'] . "</h5>";
-              unset($_SESSION['error_message']);
-            }
-            ?>
-
-            <div class="container text-center"><button id="entrar" type="submit" class="btn btn-primary">Entrar</button></div>
-          </form>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col d-flex justify-content-center align-items-center gap-4 p-5">
-
-          <strong>¿Ya tienes cuenta?</strong>
-
-          <a href="/gestion/index.php" class="btn btn-primary">Iniciar sesión</a>
-
-        </div>
-      </div>
-
     </div>
+
+    <div class="row">
+      <div class="col-md-5 m-auto">
+        <form class="border border-dark-subtle p-4 rounded shadow" action="register.php" method="post">
+
+          <div class="mb-3">
+            <label for="username" class="form-label">Usuario</label>
+            <input type="text" minlength="5" maxlength="20" class="form-control" id="username" name="username" placeholder="Usuario" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" minlength="5" maxlength="20" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+          </div>
+
+          <?php
+          if (isset($_SESSION['error_message'])) {
+            echo "<h5 class='text-danger'>" . $_SESSION['error_message'] . "</h5>";
+            unset($_SESSION['error_message']);
+          }
+          ?>
+
+          <div class="container text-center">
+
+            <button type="submit" class="btn btn-primary px-4" style="position: relative; left: 10px;">Registrarse</button>
+
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col d-flex justify-content-center align-items-center gap-4 p-5">
+
+        <strong>¿Ya tienes cuenta?</strong>
+
+        <a href="/gestion/index.php" class="btn btn-primary">Iniciar sesión</a>
+
+      </div>
+    </div>
+
 
 
 </body>

@@ -40,8 +40,8 @@ ini_set('display_errors', '1');
 
   <div class="container">
 
-    <div class="col">
-      <div class="row p-4">
+    <div class="row p-4">
+      <div class="col">
         <h1 class="text-center">Iniciar sesión</h1>
       </div>
     </div>
@@ -52,30 +52,35 @@ ini_set('display_errors', '1');
 
           <div class="mb-3">
             <label for="username" class="form-label">Usuario</label>
-            <input type="text" minlength="5" maxlength="20" class="form-control" name="username" placeholder="Usuario" required>
+            <input type="text" class="form-control" name="username" placeholder="Usuario" required>
           </div>
 
           <div class="mb-3">
             <label for="password" class="form-label">Contraseña</label>
-            <input type="password" minlength="5" maxlength="20" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
             <i class="bi bi-eye-slash" id="togglePassword"></i>
           </div>
+
           <?php
           if (isset($_SESSION['error_message'])) {
             echo "<h5 class='text-danger'>" . $_SESSION['error_message'] . "</h5>";
             unset($_SESSION['error_message']);
           }
           ?>
-          <div class="container text-center"><button type="submit" class="btn btn-primary">Entrar</button>
+
+          <div class="container text-center">
+
+            <button type="submit" class="btn btn-primary px-4" style="position: relative; left: 10px;">Entrar</button>
 
           </div>
         </form>
       </div>
     </div>
 
-    <div class="row">
+    <div class=" row">
 
       <div class="col d-flex justify-content-center align-items-center gap-4 p-5">
+
         <strong>¿No tienes cuenta?</strong>
         <a href="src/app/pages/sign-up/signup.php" class="btn btn-primary">Registrarse</a>
 

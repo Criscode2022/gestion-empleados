@@ -59,6 +59,19 @@ img {
   padding-bottom: 20pt !important;
 }
 
+.circular {
+  display: inline-block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  position: fixed;
+  bottom: 20px;
+  padding: 0;
+  text-align: center;
+  right: 20px;
+}
+
 @media (max-width: 768px) {
   .overflow {
     overflow-x: scroll;
