@@ -1,0 +1,32 @@
+table {
+  border-collapse: collapse;
+  margin: 40pt;
+  border-radius: 5pt;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+table * {
+  padding: 10pt;
+}
+
+tr {
+  border-radius: 5pt;
+}
+
+tr:not(:first-child):hover {
+  background-color: slategrey !important;
+  border-radius: 5pt !important;
+  color: white;
+}
+
+tr:not(:first-child):hover a {
+  color: white;
+}
+
+.message {
+  background-color: white;
+  padding: 20pt;
+  border-radius: 5pt;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
